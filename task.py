@@ -103,7 +103,8 @@ def landmark(image):
 	k=0
 	for i in range (49 , 68):
 		if(i!=61 or i!=65):
-			lip[k++] = shape[i]
+			lip[k] = shape[i]
+			k+=1
 	return lip
 
 # this determines the 20 PCA components of mouth shape by dimensionality reduction
@@ -137,4 +138,6 @@ for i in range(N):
 	S.append([])
 	for j in range(36):
         	S[i].append(0)
-		
+PCA_Coeff()
+Calc_weight(S,S_target)         #assuming that S_target is a 36x1 dimensional vector which is already provided to us
+Calc_median(I_k)                #assuming I_k is the target image provided to us
