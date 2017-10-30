@@ -37,7 +37,7 @@ def Calc_Median(I_k):
 		pix1 = numpy.array(I_i[i]);
 		pix2 = numpy.array(I_k);
 		x= np.absolute(pix1-pix2)*w[i]
-		if(i==1||min_val>x)
+		if(i==1 or min_val>x)
 			min_val = x
 			median_pix = pix1
 			median_img = I_i[i]
