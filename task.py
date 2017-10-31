@@ -122,7 +122,7 @@ def loadImages(path):
     imagesList = listdir(path)
     loadedImages = []
     for image in imagesList:
-        img = PImage.open(path + image)
+        img = PImage.open(path +"\\" image)
         loadedImages.append(img)
 
     return loadedImages
