@@ -28,3 +28,14 @@ I_k = target image(assumed it is already provided).
 median_img = contains the weighted median image(calculated via equation 9).
 lip[] = contains 18 landmark  point for the mouth region
 S_PCA = contain the 20 PCA coefficients.
+path = contains the path of the dataset.(needs to be provided.
+
+
+
+How to run the code?
+
+1. Download the dataset from the given link https://drive.google.com/file/d/0B5t0y0bbW7lZU0JTVlZxNHZ3VGs/view?usp=sharing. 
+2. Install all the dependencies.
+3. In the variable path give the path of the dataset in your computer.
+4. Provide the values of S_target and I_k.
+5. Compile and run.
